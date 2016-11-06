@@ -1,4 +1,4 @@
-<div ng-controller="MainController as vm" class="container">
+<div class="container">
     <div class="row">
     <h2>Poneys célèbres :</h2>
     <p class="help-block">(Appel d'un endpoint non protégé)</p>
@@ -6,4 +6,9 @@
         <li ng-repeat="poney in vm.poneys">{{poney.name}}</li>
     </ul>
     </div>
+
+    <a ui-sref="jockey">
+        <button type="button" class="btn btn-primary">Espace Jockey</button>
+    </a>
+    <p class="help-block">Partie réservée aux utilisateurs connectés</p>
 </div>
