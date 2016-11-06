@@ -19,7 +19,16 @@
         templateUrl: 'app/jockey/jockey.html'
       };
 
+      var connectState = {
+        name: 'connect',
+        url: '/connect?code',
+        controller: 'ConnectController',
+        controllerAs: 'vm',
+        templateUrl: 'app/connect/connect.html'
+      };
+
       $stateProvider.state(helloState);
       $stateProvider.state(jockeyState);
+      $stateProvider.state(connectState);
     })
 })();

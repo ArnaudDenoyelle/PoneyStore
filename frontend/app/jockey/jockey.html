@@ -1,1 +1,8 @@
-<h2>Espace jockey</h2>
+<div class="container">
+    <h2>Espace jockey</h2>
+
+    <div ng-show="vm.countdown > 0">
+        <p>Récupération de l'utilisateur connecté => Erreur 403</p>
+        <p>Redirection vers le bouchon OpenAM dans {{vm.countdown}}s</p>
+    </div>
+</div>
